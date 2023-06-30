@@ -5,7 +5,7 @@ const discount18 = ((prezzoFinale * 20) / 100);
 const discount65 = ((prezzoFinale * 40) / 100);
 const totale18 = (prezzoFinale - discount18);
 const totale65 = (prezzoFinale - discount65);
-document.getElementById("chilometri").innerHTML = numeroKm;
+document.getElementById("chilometri").innerHTML = numeroKm + " " + "Km";
 
 if (età <= 18) {
     document.getElementById("sconto").innerHTML = (Math.round((discount18 + Number.EPSILON) * 100) / 100) + "€";
